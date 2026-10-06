@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy Solar | 50% Anniversary Sale - Premium Solar Systems</title>
+    <meta name="description" content="Get up to 50% off on original Felicity Hybrid Inverters, Lithium Batteries, and Solar Panels. Limited time anniversary sale!">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        solar: {
+                            50: '#fff8ed',
+                            100: '#ffefd4',
+                            200: '#ffdba8',
+                            300: '#ffc170',
+                            400: '#ff9c37',
+                            500: '#ff7f11',
+                            600: '#f06307',
+                            700: '#c74a08',
+                            800: '#9e3b0f',
+                            900: '#7f3310',
+                        },
+                        dark: {
+                            950: '#030303',
+                            900: '#080808',
+                            800: '#0f0f0f',
+                            700: '#171717',
+                            600: '#1f1f1f',
+                            500: '#2a2a2a',
+                        }
+                    },
+                    fontFamily: {
+                        'display': ['Outfit', 'sans-serif'],
+                        'body': ['Space Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-950 text-white font-body antialiased overflow-x-hidden">
+    
+    <!-- Epic Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-bg"></div>
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <div class="preloader-sun">
+                    <div class="sun-core"></div>
+                    <div class="sun-rays-loader"></div>
+                </div>
+            </div>
+            <div class="preloader-text">
+                <span class="letter">P</span>
+                <span class="letter">R</span>
+                <span class="letter">O</span>
+                <span class="letter">X</span>
+                <span class="letter">Y</span>
+                <span class="letter accent">S</span>
+                <span class="letter accent">O</span>
+                <span class="letter accent">L</span>
+                <span class="letter accent">A</span>
+                <span class="letter accent">R</span>
+            </div>
+            <div class="preloader-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Animated Background -->
+    <div class="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+        <div class="bg-mesh"></div>
+        <div class="sun-glow sun-glow-1"></div>
+        <div class="sun-glow sun-glow-2"></div>
+        <div class="sun-glow sun-glow-3"></div>
+        <div class="grid-pattern"></div>
+        <div class="noise-overlay"></div>
+        <div class="floating-particles" id="particles"></div>
+        <div class="aurora aurora-1"></div>
+        <div class="aurora aurora-2"></div>
+    </div>
+
+    <!-- Floating Sale Badge -->
+    <a href="#order" class="floating-badge" id="floating-badge">
+        <div class="badge-glow"></div>
+        <div class="badge-content">
+            <div class="badge-icon">
+                <i data-lucide="zap" class="w-5 h-5"></i>
+            </div>
+            <div class="badge-text">
+                <span class="badge-discount">50%</span>
+                <span class="badge-label">OFF</span>
+            </div>
+        </div>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 nav-glass">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="logo-wrapper">
+                        <img src="images/logo.png" alt="Proxy Solar" class="logo-img">
+                        <div class="logo-ring"></div>
+                        <div class="logo-pulse"></div>
+                    </div>
+                    <div class="logo-text">
+                        <h1 class="font-display font-bold text-xl tracking-tight">
+                            PROXY<span class="text-solar-500">SOLAR</span>
+                        </h1>
+                        <p class="text-[10px] text-gray-500 tracking-[0.2em] uppercase">Powering Tomorrow</p>
+                    </div>
+                </a>
+                
+                <!-- Desktop Nav -->
+                <div class="hidden lg:flex items-center gap-2">
+                    <a href="#products" class="nav-link">
+                        <span>Products</span>
+                    </a>
+                    <a href="#gallery" class="nav-link">
+                        <span>Gallery</span>
+                    </a>
+                    <a href="#why-us" class="nav-link">
+                        <span>Why Us</span>
+                    </a>
+                    <a href="#locations" class="nav-link">
+                        <span>Locations</span>
+                    </a>
+                    <a href="#order" class="btn-nav-cta ml-4">
+                        <span class="btn-glow"></span>
+                        <i data-lucide="zap" class="w-4 h-4"></i>
+                        <span>Order Now</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden btn-mobile-menu">
+                    <span class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <div class="mobile-menu-content">
+                <a href="#products" class="mobile-link">
+                    <i data-lucide="package" class="w-5 h-5"></i>
+                    <span>Products</span>
+                </a>
+                <a href="#gallery" class="mobile-link">
+                    <i data-lucide="image" class="w-5 h-5"></i>
+                    <span>Gallery</span>
+                </a>
+                <a href="#why-us" class="mobile-link">
+                    <i data-lucide="star" class="w-5 h-5"></i>
+                    <span>Why Us</span>
+                </a>
+                <a href="#locations" class="mobile-link">
+                    <i data-lucide="map-pin" class="w-5 h-5"></i>
+                    <span>Locations</span>
+                </a>
+                <a href="#order" class="btn-mobile-cta">
+                    <i data-lucide="zap" class="w-5 h-5"></i>
+                    <span>Order Now</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <!-- Floating Product -->
+        <div class="hero-product">
+            <div class="product-float">
+                <img src="images/inverter-1.jpeg" alt="Felicity Inverter" class="hero-product-img">
+                <div class="product-glow"></div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+            <div class="text-center">
+                <!-- Animated Badge - BIGGER AND BOLDER -->
+                <div class="hero-badge-mega" data-aos="fade-down" data-aos-delay="200">
+                    <div class="badge-shine"></div>
+                    <span class="pulse-dot-mega"></span>
+                    <span class="badge-text-mega">🎉 50% ANNIVERSARY DISCOUNT</span>
+                    <span class="badge-timer-mega">LIMITED TIME!</span>
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="300">
+                    <span class="title-line title-line-1">POWER YOUR</span>
+                    <span class="title-line title-line-2 gradient-text-animated">FUTURE</span>
+                </h1>
+
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
+                    Premium Felicity Hybrid Inverters, Lithium Batteries & Solar Panels at 
+                    <span class="highlight">unbeatable prices</span>. Complete solar solutions with warranty.
+                </p>
+
+                <!-- Countdown Timer -->
+                <div class="countdown-wrapper" data-aos="fade-up" data-aos-delay="450">
+                    <p class="countdown-label">Sale Ends In</p>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <div class="countdown-value" id="days">00</div>
+                            <div class="countdown-unit">Days</div>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <div class="countdown-value" id="hours">00</div>
+                            <div class="countdown-unit">Hours</div>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <div class="countdown-value" id="minutes">00</div>
+                            <div class="countdown-unit">Mins</div>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <div class="countdown-value" id="seconds">00</div>
+                            <div class="countdown-unit">Secs</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="500">
+                    <a href="#products" class="btn-hero-primary">
+                        <span class="btn-bg"></span>
+                        <span class="btn-content">
+                            <i data-lucide="zap" class="w-5 h-5"></i>
+                            <span>View Packages</span>
+                        </span>
+                    </a>
+                    <a href="#order" class="btn-hero-secondary">
+                        <span class="btn-border"></span>
+                        <span class="btn-content">
+                            <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                            <span>Place Order</span>
+                        </span>
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="trust-badges" data-aos="fade-up" data-aos-delay="600">
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i data-lucide="shield-check" class="w-5 h-5"></i>
+                        </div>
+                        <span>Full Warranty</span>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i data-lucide="truck" class="w-5 h-5"></i>
+                        </div>
+                        <span>Nationwide Delivery</span>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i data-lucide="badge-check" class="w-5 h-5"></i>
+                        </div>
+                        <span>100% Original</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-count="500">0</span>
+                        <span class="stat-suffix">+</span>
+                    </div>
+                    <p class="stat-label">Happy Customers</p>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i data-lucide="percent" class="w-6 h-6"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-suffix">%</span>
+                    </div>
+                    <p class="stat-label">Maximum Discount</p>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i data-lucide="battery-full" class="w-6 h-6"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-suffix">yrs</span>
+                    </div>
+                    <p class="stat-label">Battery Lifespan</p>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-icon">
+                        <i data-lucide="map-pin" class="w-6 h-6"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-count="4">0</span>
+                        <span class="stat-suffix"></span>
+                    </div>
+                    <p class="stat-label">Office Locations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section-padding">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">
+                    <i data-lucide="package" class="w-4 h-4"></i>
+                    OUR PACKAGES
+                </span>
+                <h2 class="section-title">
+                    Complete Solar <span class="gradient-text">Solutions</span>
+                </h2>
+                <p class="section-subtitle">
+                    Choose the perfect package for your power needs. All systems come with warranty and professional installation support.
+                </p>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                
+                <!-- 3KVA Package -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-badge badge-hot">
+                        <i data-lucide="flame" class="w-3.5 h-3.5"></i>
+                        HOT DEAL
+                    </div>
+                    <div class="product-image">
+                        <div class="image-glow"></div>
+                        <img src="images/inverter.png" alt="3KVA Felicity Inverter">
+                        <div class="image-overlay">
+                            <span>View Details</span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">3KVA Package</span>
+                        <h3 class="product-title">Starter Solar System</h3>
+                        <ul class="product-features">
+                            <li><i data-lucide="check-circle-2" class="w-4 h-4"></i> 3KVA Felicity Hybrid Inverter</li>
+                            <li><i data-lucide="check-circle-2" class="w-4 h-4"></i> 2.5KWH Lithium Battery</li>
+                            <li><i data-lucide="check-circle-2" class="w-4 h-4"></i> 8 Units × 250W Mono Panel</li>
+                            <li><i data-lucide="check-circle-2" class="w-4 h-4"></i> Full Warranty</li>
+                            <li><i data-lucide="x-circle" class="w-4 h-4 text-red-500"></i> <span class="text-red-400">Cannot Power AC</span></li>
+                        </ul>
+                        <div class="product-pricing">
+                            <div class="price-current">₦1.5M</div>
+                            <div class="price-old">₦2.8M</div>
+                            <div class="price-discount">-46%</div>
+                        </div>
+                        <button onclick="selectProduct('3kva')" class="btn-product">
+                            <span>Order Now</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 5KVA Package -->
+                <div class="product-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-border"></div>
+                    <div class="product-badge badge-popular">
+                        <i data-lucide="crown" class="w-3.5 h-3.5"></i>
+                        MOST POPULAR
+                    </div>
+                    <div class="product-image">
+                        <div class="image-glow"></div>
+                        <img src="images/5kva.png" alt="5KVA Felicity Inverter">
+                        <div class="image-overlay">
+                            <span>View Details</span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">5KVA Package</span>
+                        <h3 class="product-title">Premium Solar System</h3>
+                        <ul class="product-features">
+                            <li><i data-lucide="check-circle-2" class="w-4 h-4"></i> 5KVA High Voltage Hybrid Inverter</li>
+                            <li><i data-lucide="check-circle-2" class="w-4 h-4"></i> 5KWH Lithium Battery (10yr life)</li>
+                            <li><i data-lucide="check-circle-2" class="w-4 h-4"></i> 6 × 450W OR 10 × 250W Panels</li>
+                            <li><i data-lucide="check-circle-2" class="w-4 h-4"></i> Built-in 100A MPPT Controller</li>
+                            <li><i data-lucide="snowflake" class="w-4 h-4 text-blue-400"></i> <span class="text-blue-400">Powers 1 AC</span></li>
+                        </ul>
+                        <div class="product-pricing">
+                            <div class="price-current">₦2.49M</div>
+                            <div class="price-old">₦4.9M</div>
+                            <div class="price-discount">-49%</div>
+                        </div>
+                        <button onclick="selectProduct('5kva')" class="btn-product">
+                            <span>Order Now</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 6KVA Package -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-badge badge-pro">
+                        <i data-lucide="rocket" class="w-3.5 h-3.5"></i>
+                        PRO
+                    </div>
+                    <div class="product-image">
+                        <div class="image-glow"></div>
+                        <img src="images/6kva.png" alt="6KVA Felicity Inverter">
+                        <div class="image-overlay">
+                            <span>View Details</span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">6KVA Package</span>
+                        <h3 class="product-title">Business Power System</h3>
+                        <ul class="product-features">
+                            <li><i data-lucide="check-circle-2" class="w-4 h-4"></i> 6KVA Hybrid Inverter</li>
+                            <li><i data-lucide="check-circle-2" class="w-4 h-4"></i> 5KWH LiFePO4 Battery (10yr life)</li>
+                            <li><i data-lucide="check-circle-2" class="w-4 h-4"></i> 10 × 250W Mono Panels</li>
+                            <li><i data-lucide="check-circle-2" class="w-4 h-4"></i> Built-in 100A MPPT Controller</li>
+                            <li><i data-lucide="snowflake" class="w-4 h-4 text-blue-400"></i> <span class="text-blue-400">Powers 2 ACs</span></li>
+                        </ul>
+                        <div class="product-pricing">
+                            <div class="price-current">₦2.69M</div>
+                            <div class="price-old">₦4.96M</div>
+                            <div class="price-discount">-46%</div>
+                        </div>
+                        <button onclick="selectProduct('6kva')" class="btn-product">
+                            <span>Order Now</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 8KVA Package -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-badge badge-best">
+                        <i data-lucide="trophy" class="w-3.5 h-3.5"></i>
+                        BEST VALUE
+                    </div>
+                    <div class="product-image">
+                        <div class="image-glow"></div>
+                        <img src="images/8kva.png" alt="8KVA Felicity Inverter">
+                        <div class="image-overlay">
+                            <span>View Details</span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-tag">8KVA Package</span>
+                        <h3 class="product-title">Ultimate Power System</h3>
+                        <ul class="product-features">
+                            <li><i data-lucide="check-circle-2" class="w-4 h-4"></i> 8KVA Felicity Inverter</li>
+                            <li><i data-lucide="check-circle-2" class="w-4 h-4"></i> 15KWH Tall Lithium Battery (10yr life)</li>
+                            <li><i data-lucide="check-circle-2" class="w-4 h-4"></i> 8 × 650W Half Cut Panels (Black Frame)</li>
+                            <li><i data-lucide="check-circle-2" class="w-4 h-4"></i> Built-in 100A MPPT Controller</li>
+                            <li><i data-lucide="snowflake" class="w-4 h-4 text-blue-400"></i> <span class="text-blue-400">Powers 3 ACs</span></li>
+                        </ul>
+                        <div class="product-pricing">
+                            <div class="price-current">₦4.98M</div>
+                            <div class="price-old">₦9.96M</div>
+                            <div class="price-discount">-50%</div>
+                        </div>
+                        <button onclick="selectProduct('8kva')" class="btn-product">
+                            <span>Order Now</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Can It Power Section -->
+    <section class="power-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">
+                    <i data-lucide="zap" class="w-4 h-4"></i>
+                    CAPABILITIES
+                </span>
+                <h2 class="section-title">
+                    What Can Our Systems <span class="gradient-text">Power?</span>
+                </h2>
+            </div>
+
+            <div class="power-grid">
+                <div class="power-item" data-aos="fade-up" data-aos-delay="50">
+                    <div class="power-icon"><i data-lucide="lightbulb" class="w-7 h-7"></i></div>
+                    <span>Bulbs</span>
+                </div>
+                <div class="power-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="power-icon"><i data-lucide="fan" class="w-7 h-7"></i></div>
+                    <span>Fans</span>
+                </div>
+                <div class="power-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="power-icon"><i data-lucide="laptop" class="w-7 h-7"></i></div>
+                    <span>Laptops</span>
+                </div>
+                <div class="power-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="power-icon"><i data-lucide="tv" class="w-7 h-7"></i></div>
+                    <span>TVs</span>
+                </div>
+                <div class="power-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="power-icon"><i data-lucide="speaker" class="w-7 h-7"></i></div>
+                    <span>Home Theater</span>
+                </div>
+                <div class="power-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="power-icon"><i data-lucide="wifi" class="w-7 h-7"></i></div>
+                    <span>Router</span>
+                </div>
+                <div class="power-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="power-icon"><i data-lucide="refrigerator" class="w-7 h-7"></i></div>
+                    <span>Freezer</span>
+                </div>
+                <div class="power-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="power-icon"><i data-lucide="blend" class="w-7 h-7"></i></div>
+                    <span>Blender</span>
+                </div>
+                <div class="power-item" data-aos="fade-up" data-aos-delay="450">
+                    <div class="power-icon"><i data-lucide="droplets" class="w-7 h-7"></i></div>
+                    <span>Water Pump</span>
+                </div>
+                <div class="power-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="power-icon"><i data-lucide="gamepad-2" class="w-7 h-7"></i></div>
+                    <span>PlayStation 5</span>
+                </div>
+                <div class="power-item" data-aos="fade-up" data-aos-delay="550">
+                    <div class="power-icon"><i data-lucide="washing-machine" class="w-7 h-7"></i></div>
+                    <span>Washing Machine</span>
+                </div>
+                <div class="power-item highlight" data-aos="fade-up" data-aos-delay="600">
+                    <div class="power-icon"><i data-lucide="air-vent" class="w-7 h-7"></i></div>
+                    <span>AC (5KVA+)</span>
+                </div>
+            </div>
+
+            <!-- AC Power Info -->
+            <div class="ac-power-info" data-aos="fade-up" data-aos-delay="700">
+                <div class="ac-info-card">
+                    <i data-lucide="snowflake" class="w-8 h-8"></i>
+                    <div class="ac-info-content">
+                        <h4>Air Conditioner Power Guide</h4>
+                        <div class="ac-list">
+                            <div class="ac-item">
+                                <span class="ac-kva">3KVA</span>
+                                <span class="ac-can"><i data-lucide="x" class="w-4 h-4"></i> Cannot Power AC</span>
+                            </div>
+                            <div class="ac-item">
+                                <span class="ac-kva">5KVA</span>
+                                <span class="ac-can ac-yes"><i data-lucide="check" class="w-4 h-4"></i> Powers 1 AC</span>
+                            </div>
+                            <div class="ac-item">
+                                <span class="ac-kva">6KVA</span>
+                                <span class="ac-can ac-yes"><i data-lucide="check" class="w-4 h-4"></i> Powers 2 ACs</span>
+                            </div>
+                            <div class="ac-item">
+                                <span class="ac-kva">8KVA</span>
+                                <span class="ac-can ac-yes"><i data-lucide="check" class="w-4 h-4"></i> Powers 3 ACs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section-padding">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">
+                    <i data-lucide="image" class="w-4 h-4"></i>
+                    GALLERY
+                </span>
+                <h2 class="section-title">
+                    Product <span class="gradient-text">Gallery</span>
+                </h2>
+                <p class="section-subtitle">
+                    Explore our high-quality solar products and components
+                </p>
+            </div>
+
+            <div class="gallery-grid-new" id="gallery-grid">
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" onclick="openLightbox(0)">
+                    <img src="images/inverter-1.jpeg" alt="Felicity IVEM Inverter" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <span class="gallery-title">Felicity IVEM Inverter</span>
+                            <span class="gallery-subtitle">Hybrid Technology</span>
+                        </div>
+                        <div class="gallery-zoom">
+                            <i data-lucide="maximize-2" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="200" onclick="openLightbox(1)">
+                    <img src="images/inverter-2.jpeg" alt="8KVA Inverter Specs" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <span class="gallery-title">IVEM 8048-II</span>
+                            <span class="gallery-subtitle">8KVA Power System</span>
+                        </div>
+                        <div class="gallery-zoom">
+                            <i data-lucide="maximize-2" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="300" onclick="openLightbox(2)">
+                    <img src="images/inverter-3.jpeg" alt="5KVA Inverter" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <span class="gallery-title">5KVA Hybrid Inverter</span>
+                            <span class="gallery-subtitle">Premium Model</span>
+                        </div>
+                        <div class="gallery-zoom">
+                            <i data-lucide="maximize-2" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="400" onclick="openLightbox(3)">
+                    <img src="images/inverter-6kva.png" alt="6KVA Inverter Specs" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <span class="gallery-title">IVEM 6048-II</span>
+                            <span class="gallery-subtitle">6KVA Specifications</span>
+                        </div>
+                        <div class="gallery-zoom">
+                            <i data-lucide="maximize-2" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="500" onclick="openLightbox(4)">
+                    <img src="images/inverter-specs-new.png" alt="Technical Specifications" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <span class="gallery-title">Technical Specs</span>
+                            <span class="gallery-subtitle">Full Overview</span>
+                        </div>
+                        <div class="gallery-zoom">
+                            <i data-lucide="maximize-2" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="600" onclick="openLightbox(5)">
+                    <img src="images/battery.png" alt="Lithium Battery" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <span class="gallery-title">LiFePO4 Battery</span>
+                            <span class="gallery-subtitle">10 Year Lifespan</span>
+                        </div>
+                        <div class="gallery-zoom">
+                            <i data-lucide="maximize-2" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <button class="lightbox-nav prev" onclick="navigateLightbox(-1)">
+                <i data-lucide="chevron-left" class="w-6 h-6"></i>
+            </button>
+            <div class="lightbox-image-container">
+                <img id="lightbox-img" src="" alt="Gallery Image">
+            </div>
+            <button class="lightbox-nav next" onclick="navigateLightbox(1)">
+                <i data-lucide="chevron-right" class="w-6 h-6"></i>
+            </button>
+            <div class="lightbox-counter">
+                <span id="lightbox-current">1</span> / <span id="lightbox-total">6</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="section-padding why-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="why-grid">
+                <div class="why-content">
+                    <span class="section-badge" data-aos="fade-right">
+                        <i data-lucide="star" class="w-4 h-4"></i>
+                        WHY CHOOSE US
+                    </span>
+                    <h2 class="section-title text-left" data-aos="fade-right" data-aos-delay="100">
+                        Quality You Can <span class="gradient-text">Trust</span>
+                    </h2>
+                    <p class="why-description" data-aos="fade-right" data-aos-delay="200">
+                        All our products are original, brand new, and come with full manufacturer warranty. 
+                        We've been powering Nigerian homes and businesses with reliable solar solutions.
+                    </p>
+
+                    <div class="features-list">
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="300">
+                            <div class="feature-icon">
+                                <i data-lucide="award" class="w-6 h-6"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Original Products Only</h4>
+                                <p>100% authentic Felicity products with serial number verification</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="400">
+                            <div class="feature-icon">
+                                <i data-lucide="shield-check" class="w-6 h-6"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Full Warranty Coverage</h4>
+                                <p>2 years on inverters, up to 10 years on lithium batteries</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="500">
+                            <div class="feature-icon">
+                                <i data-lucide="wrench" class="w-6 h-6"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Professional Installation</h4>
+                                <p>Expert installation support and after-sales service</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="600">
+                            <div class="feature-icon">
+                                <i data-lucide="battery-charging" class="w-6 h-6"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Long-Lasting Performance</h4>
+                                <p>LiFePO4 batteries last up to 10 years with optimal performance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specs-wrapper" data-aos="fade-left" data-aos-delay="300">
+                    <div class="specs-card">
+                        <div class="specs-glow"></div>
+                        <div class="specs-header">
+                            <img src="images/logo.png" alt="Proxy Solar" class="specs-logo">
+                            <div>
+                                <h4>IVEM 6048-II Series</h4>
+                                <p>Technical Specifications</p>
+                            </div>
+                        </div>
+                        <div class="specs-body">
+                            <div class="spec-row">
+                                <span>Model</span>
+                                <span>IVEM6048-II</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Rated Output Power</span>
+                                <span>6kW</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Nominal DC Input</span>
+                                <span>48V</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Nominal Input Voltage</span>
+                                <span>230Vac</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Input Voltage Range</span>
+                                <span>90-280Vac</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Operating Temp</span>
+                                <span>-10°C ~ 50°C</span>
+                            </div>
+                            <div class="spec-row highlight">
+                                <span>Warranty</span>
+                                <span>2 Years</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="section-padding order-section">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">
+                    <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                    PLACE YOUR ORDER
+                </span>
+                <h2 class="section-title">
+                    Order <span class="gradient-text">Now</span>
+                </h2>
+                <p class="section-subtitle">
+                    Fill in your details and we'll get back to you within 24 hours
+                </p>
+            </div>
+
+            <div class="form-wrapper" data-aos="fade-up" data-aos-delay="200" id="form-wrapper">
+                <!-- Form Progress -->
+                <div class="form-progress">
+                    <div class="progress-step active" data-step="1">
+                        <div class="step-circle">
+                            <span class="step-number">1</span>
+                            <i data-lucide="check" class="step-check w-4 h-4"></i>
+                        </div>
+                        <span class="step-label">Package</span>
+                    </div>
+                    <div class="progress-line"><div class="line-fill"></div></div>
+                    <div class="progress-step" data-step="2">
+                        <div class="step-circle">
+                            <span class="step-number">2</span>
+                            <i data-lucide="check" class="step-check w-4 h-4"></i>
+                        </div>
+                        <span class="step-label">Details</span>
+                    </div>
+                    <div class="progress-line"><div class="line-fill"></div></div>
+                    <div class="progress-step" data-step="3">
+                        <div class="step-circle">
+                            <span class="step-number">3</span>
+                            <i data-lucide="check" class="step-check w-4 h-4"></i>
+                        </div>
+                        <span class="step-label">Delivery</span>
+                    </div>
+                </div>
+
+                <form id="order-form" class="order-form" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms Hidden Fields -->
+                    <input type="hidden" name="access_key" value="1df9bf4f-65c3-40a6-8a81-8601e57e0bd1">
+                    <input type="hidden" name="subject" value="New Order from Proxy Solar Website">
+                    <input type="hidden" name="from_name" value="Proxy Solar Order Form">
+                    <input type="hidden" name="redirect" value="">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+
+                    <!-- Step 1: Package Selection -->
+                    <div class="form-step active" data-step="1">
+                        <div class="step-header">
+                            <div class="step-icon">
+                                <i data-lucide="package" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3>Select Your Package</h3>
+                                <p>Choose the solar system that fits your needs</p>
+                            </div>
+                        </div>
+
+                        <div class="package-selector">
+                            <label class="package-option">
+                                <input type="radio" name="product" value="3KVA Package - ₦1,500,000" required>
+                                <div class="package-card">
+                                    <div class="package-badge hot">HOT</div>
+                                    <div class="package-info">
+                                        <span class="package-name">3KVA Package</span>
+                                        <span class="package-desc">Starter Solar System</span>
+                                    </div>
+                                    <div class="package-price">₦1,500,000</div>
+                                    <div class="package-check">
+                                        <i data-lucide="check" class="w-5 h-5"></i>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="package-option">
+                                <input type="radio" name="product" value="5KVA Package - ₦2,490,000">
+                                <div class="package-card">
+                                    <div class="package-badge popular">POPULAR</div>
+                                    <div class="package-info">
+                                        <span class="package-name">5KVA Package</span>
+                                        <span class="package-desc">Premium Solar System (1 AC)</span>
+                                    </div>
+                                    <div class="package-price">₦2,490,000</div>
+                                    <div class="package-check">
+                                        <i data-lucide="check" class="w-5 h-5"></i>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="package-option">
+                                <input type="radio" name="product" value="6KVA Package - ₦2,690,000">
+                                <div class="package-card">
+                                    <div class="package-badge pro">PRO</div>
+                                    <div class="package-info">
+                                        <span class="package-name">6KVA Package</span>
+                                        <span class="package-desc">Business Power System (2 ACs)</span>
+                                    </div>
+                                    <div class="package-price">₦2,690,000</div>
+                                    <div class="package-check">
+                                        <i data-lucide="check" class="w-5 h-5"></i>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="package-option">
+                                <input type="radio" name="product" value="8KVA Package - ₦4,980,000">
+                                <div class="package-card">
+                                    <div class="package-badge best">BEST</div>
+                                    <div class="package-info">
+                                        <span class="package-name">8KVA Package</span>
+                                        <span class="package-desc">Ultimate Power System (3 ACs)</span>
+                                    </div>
+                                    <div class="package-price">₦4,980,000</div>
+                                    <div class="package-check">
+                                        <i data-lucide="check" class="w-5 h-5"></i>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="form-actions">
+                            <div></div>
+                            <button type="button" class="btn-next" onclick="nextStep()">
+                                Continue
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Personal Information -->
+                    <div class="form-step" data-step="2">
+                        <div class="step-header">
+                            <div class="step-icon">
+                                <i data-lucide="user" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3>Personal Information</h3>
+                                <p>Tell us about yourself</p>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="user" class="input-icon w-4 h-4"></i>
+                                    <input type="text" id="firstName" name="first_name" required placeholder="John">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="user" class="input-icon w-4 h-4"></i>
+                                    <input type="text" id="lastName" name="last_name" required placeholder="Doe">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="mail" class="input-icon w-4 h-4"></i>
+                                    <input type="email" id="email" name="email" required placeholder="john@email.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="whatsapp">WhatsApp Number *</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="message-circle" class="input-icon w-4 h-4"></i>
+                                    <input type="tel" id="whatsapp" name="whatsapp_number" required placeholder="08012345678">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Calling Number *</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="phone" class="input-icon w-4 h-4"></i>
+                                    <input type="tel" id="phone" name="calling_number" required placeholder="08012345678">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="altPhone">Alternative Number</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="phone-call" class="input-icon w-4 h-4"></i>
+                                    <input type="tel" id="altPhone" name="alternative_number" placeholder="Optional">
+                                </div>
+                            </div>
+                            <div class="form-group full">
+                                <label for="nin">NIN (National ID Number) *</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="fingerprint" class="input-icon w-4 h-4"></i>
+                                    <input type="text" id="nin" name="nin" required placeholder="11-digit NIN" maxlength="11" pattern="[0-9]{11}">
+                                </div>
+                                <span class="input-hint">Required for order verification and security</span>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn-prev" onclick="prevStep()">
+                                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                                Back
+                            </button>
+                            <button type="button" class="btn-next" onclick="nextStep()">
+                                Continue
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Delivery Information -->
+                    <div class="form-step" data-step="3">
+                        <div class="step-header">
+                            <div class="step-icon">
+                                <i data-lucide="map-pin" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3>Delivery Information</h3>
+                                <p>Where should we deliver?</p>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group full">
+                                <label for="address">Delivery Address *</label>
+                                <div class="input-wrapper textarea">
+                                    <i data-lucide="home" class="input-icon w-4 h-4"></i>
+                                    <textarea id="address" name="address" required placeholder="Enter your full delivery address" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="busStop">Closest Bus Stop *</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="bus" class="input-icon w-4 h-4"></i>
+                                    <input type="text" id="busStop" name="closest_bus_stop" required placeholder="e.g., Ikeja Under Bridge">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="building" class="input-icon w-4 h-4"></i>
+                                    <input type="text" id="city" name="city" required placeholder="e.g., Lagos">
+                                </div>
+                            </div>
+                            <div class="form-group full">
+                                <label for="state">State *</label>
+                                <div class="input-wrapper select">
+                                    <i data-lucide="map" class="input-icon w-4 h-4"></i>
+                                    <select id="state" name="state" required>
+                                        <option value="">Select State</option>
+                                        <option value="Lagos">Lagos</option>
+                                        <option value="Ogun">Ogun</option>
+                                        <option value="Oyo">Oyo</option>
+                                        <option value="FCT">FCT - Abuja</option>
+                                        <option value="Abia">Abia</option>
+                                        <option value="Adamawa">Adamawa</option>
+                                        <option value="Akwa Ibom">Akwa Ibom</option>
+                                        <option value="Anambra">Anambra</option>
+                                        <option value="Bauchi">Bauchi</option>
+                                        <option value="Bayelsa">Bayelsa</option>
+                                        <option value="Benue">Benue</option>
+                                        <option value="Borno">Borno</option>
+                                        <option value="Cross River">Cross River</option>
+                                        <option value="Delta">Delta</option>
+                                        <option value="Ebonyi">Ebonyi</option>
+                                        <option value="Edo">Edo</option>
+                                        <option value="Ekiti">Ekiti</option>
+                                        <option value="Enugu">Enugu</option>
+                                        <option value="Gombe">Gombe</option>
+                                        <option value="Imo">Imo</option>
+                                        <option value="Jigawa">Jigawa</option>
+                                        <option value="Kaduna">Kaduna</option>
+                                        <option value="Kano">Kano</option>
+                                        <option value="Katsina">Katsina</option>
+                                        <option value="Kebbi">Kebbi</option>
+                                        <option value="Kogi">Kogi</option>
+                                        <option value="Kwara">Kwara</option>
+                                        <option value="Nasarawa">Nasarawa</option>
+                                        <option value="Niger">Niger</option>
+                                        <option value="Ondo">Ondo</option>
+                                        <option value="Osun">Osun</option>
+                                        <option value="Plateau">Plateau</option>
+                                        <option value="Rivers">Rivers</option>
+                                        <option value="Sokoto">Sokoto</option>
+                                        <option value="Taraba">Taraba</option>
+                                        <option value="Yobe">Yobe</option>
+                                        <option value="Zamfara">Zamfara</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group full">
+                                <label for="pickup">Pickup Location (Optional)</label>
+                                <div class="input-wrapper select">
+                                    <i data-lucide="store" class="input-icon w-4 h-4"></i>
+                                    <select id="pickup" name="pickup_location">
+                                        <option value="Delivery to my address">I need delivery</option>
+                                        <option value="Lagos Office - 20, Araromi Street, Anifowose Ikeja">Lagos Office</option>
+                                        <option value="Abeokuta Office - 19, Prestige Plaza, Panseke">Abeokuta Office</option>
+                                        <option value="Ibadan Office - 2 Bode Kumapayi Street, Iwo Road">Ibadan Office</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group full">
+                                <label for="notes">Additional Notes (Optional)</label>
+                                <div class="input-wrapper textarea">
+                                    <i data-lucide="message-square" class="input-icon w-4 h-4"></i>
+                                    <textarea id="notes" name="message" placeholder="Any special requirements or questions..." rows="2"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <label class="terms-checkbox">
+                            <input type="checkbox" name="terms" required>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">I agree to the <a href="#">Terms & Conditions</a></span>
+                        </label>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn-prev" onclick="prevStep()">
+                                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                                Back
+                            </button>
+                            <button type="submit" class="btn-submit" id="submit-btn">
+                                <span class="btn-text">
+                                    <i data-lucide="send" class="w-5 h-5"></i>
+                                    Submit Order
+                                </span>
+                                <span class="btn-loading">
+                                    <span class="spinner"></span>
+                                    Processing...
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="section-padding locations-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">
+                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                    VISIT US
+                </span>
+                <h2 class="section-title">
+                    Our <span class="gradient-text">Locations</span>
+                </h2>
+                <p class="section-subtitle">
+                    Visit any of our offices across Nigeria for product viewing and pickup
+                </p>
+            </div>
+
+            <div class="locations-grid-4">
+                <div class="location-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="location-icon">
+                        <i data-lucide="building-2" class="w-8 h-8"></i>
+                    </div>
+                    <h3>Lagos Office</h3>
+                    <p>20, Araromi Street, Anifowose, Ikeja, Lagos State</p>
+                    <a href="https://maps.app.goo.gl/PR15RtNyhCAnPho96?g_st=ac" target="_blank" class="location-link">
+                        <i data-lucide="navigation" class="w-4 h-4"></i>
+                        Get Directions
+                    </a>
+                </div>
+                <div class="location-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="location-icon">
+                        <i data-lucide="building-2" class="w-8 h-8"></i>
+                    </div>
+                    <h3>Ibadan Office</h3>
+                    <p>2 Bode Kumapayi Street, Beside BQ Bar & Lounge, Iwo Road, Ibadan</p>
+                    <a href="https://maps.app.goo.gl/RmFuHJ2ww1evHFB47?g_st=ac" target="_blank" class="location-link">
+                        <i data-lucide="navigation" class="w-4 h-4"></i>
+                        Get Directions
+                    </a>
+                </div>
+                <div class="location-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="location-icon">
+                        <i data-lucide="building-2" class="w-8 h-8"></i>
+                    </div>
+                    <h3>Abeokuta Office</h3>
+                    <p>19, Prestige Plaza, Onikoko Road, Panseke, Abeokuta, Ogun State</p>
+                    <a href="https://maps.app.goo.gl/oe9Hrm5KPp7Hmq3v5?g_st=ac" target="_blank" class="location-link">
+                        <i data-lucide="navigation" class="w-4 h-4"></i>
+                        Get Directions
+                    </a>
+                </div>
+                <div class="location-card coming-soon" data-aos="fade-up" data-aos-delay="400">
+                    <div class="location-icon">
+                        <i data-lucide="clock" class="w-8 h-8"></i>
+                    </div>
+                    <h3>Abuja Office</h3>
+                    <p>Coming Soon! We're expanding to serve you better in the FCT.</p>
+                    <span class="coming-soon-badge">
+                        <i data-lucide="hourglass" class="w-4 h-4"></i>
+                        Coming Soon
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="cta-card" data-aos="zoom-in">
+                <div class="cta-glow"></div>
+                <div class="cta-content">
+                    <h2 class="cta-title">
+                        Ready to <span class="gradient-text">Go Solar?</span>
+                    </h2>
+                    <p class="cta-text">
+                        Don't miss our 50% anniversary sale! Limited stock available at these prices.
+                    </p>
+                    <a href="#order" class="btn-cta">
+                        <span class="btn-glow"></span>
+                        <i data-lucide="zap" class="w-5 h-5"></i>
+                        <span>Place Your Order Now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Proxy Solar">
+                        <div>
+                            <h3>PROXY<span>SOLAR</span></h3>
+                            <p>Powering Tomorrow</p>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        Nigeria's trusted provider of premium solar solutions. Quality Felicity inverters, batteries, and panels with full warranty.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#order">Order Now</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            <span>Lagos, Ibadan, Abeokuta, Abuja</span>
+                        </li>
+                        <li>
+                            <i data-lucide="clock" class="w-4 h-4"></i>
+                            <span>Mon - Sat: 8AM - 6PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2024</span> Proxy Solar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-icon"></div>
+        <span class="toast-message"></span>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-icon">
+                <div class="icon-circle">
+                    <i data-lucide="check" class="w-10 h-10"></i>
+                </div>
+                <div class="icon-rings">
+                    <div class="ring ring-1"></div>
+                    <div class="ring ring-2"></div>
+                    <div class="ring ring-3"></div>
+                </div>
+            </div>
+            <h3>Order Submitted Successfully!</h3>
+            <p>Thank you for your order. You'll be redirected to chat with our team to confirm your order details.</p>
+            <div class="modal-countdown">
+                <span>Redirecting in</span>
+                <span class="countdown-number" id="countdown-number">5</span>
+                <span>seconds...</span>
+            </div>
+            <button onclick="redirectNow()" class="btn-modal">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                Chat Now
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
